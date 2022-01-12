@@ -4,15 +4,28 @@ import 'package:flutter/material.dart';
 
 class Pic extends StatelessWidget {
   final String path;
-  const Pic(this.path, {Key? key}) : super(key: key);
+  final int originalSize;
+  final int resizedSize;
+
+  const Pic(this.path,
+      {Key? key, required this.originalSize, required this.resizedSize})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Image'),
+        title: const Text('Resized Image'),
       ),
-      body: Image.file(File(path)),
+      body: Column(
+        children: [
+          Image.file(File(path)),
+          const SizedBox(height: 16),
+          Text('Original size: ${originalSize / 1000} KB'),
+          const SizedBox(height: 16),
+          Text('Resized size: ${resizedSize / 1000} KB'),
+        ],
+      ),
     );
   }
 }
