@@ -20,8 +20,8 @@ dev_dependencies:
 flutter:
   plugin:
     platforms:
-      android:
-        package: it.matteoricupero.resize_media
-        pluginClass: ResizeMediaPlugin
+      # android:
+      #   package: it.matteoricupero.resize_media
+      #   pluginClass: ResizeMediaPlugin
       ios:
         pluginClass: ResizeMediaPlugin
