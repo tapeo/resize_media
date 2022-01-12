@@ -1,16 +1,40 @@
-# resize_media_example
 
-Demonstrates how to use the resize_media plugin.
+# resize_media
 
-## Getting Started
+Resize media to a given size
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+* Pictures resize (currently only iOS)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Install
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+In the `pubspec.yaml` of your flutter project, add the following dependency:
+
+```yaml
+dependencies:
+  resize_media: <latest_version>
+```
+
+In your library add the following import:
+
+```dart
+import 'package:resize_media/resize_media.dart';
+```
+
+## Getting started
+
+Example:
+
+```dart
+ResizeMedia().image(
+                path: fileImage.path,
+                imageQuality: 1,
+                maxWidth: 1920,
+                maxHeight: 1920,
+              );
+```
+
+## Parameters
+
+Leave empty `imageQuality`,`maxWidth`,`maxHeight` to get the original image
