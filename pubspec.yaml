@@ -1,7 +1,8 @@
 name: resize_media
 description: Resize media files
 version: 1.0.0
-homepage: null
+homepage: "https://github.com/tapeo/resize_media"
+repository: "https://github.com/tapeo/resize_media"
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
