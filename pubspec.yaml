@@ -1,5 +1,5 @@
 name: resize_media
-description: Resize media files
+description: Resize media files to a specified size
 version: 1.0.0
 homepage: "https://github.com/tapeo/resize_media"
 repository: "https://github.com/tapeo/resize_media"
